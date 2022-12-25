@@ -1,0 +1,175 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(233, 13%, 49%);
+    /* padding: 3rem 7rem; */
+}
+
+main, header{
+    margin: auto;
+}
+
+.toggle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+label{
+    margin: auto 1rem;
+}
+
+.body-content{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.bas-mas{
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem 2.5rem;
+    margin: 2rem 0;
+}
+button{
+    padding: .6rem 2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 7px;
+    border-color: white;
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.bas-mas button{
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+}
+.bas-mas button:hover{
+    background-image: none;
+    background-color: white;
+    border-color: hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+.professional{
+    border-radius: 10px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding:3rem 2.5rem;
+    margin: 2rem 0;
+    color: white;
+}
+.pro-btn{
+    background-color: white;
+}
+.pro-btn:hover{
+   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   color: white;
+   border-color: white; 
+}
+.amount{
+    margin-left: .5rem;
+}
+.amounts{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amounts .pro{
+    color: white;
+}
+
+@media screen and (max-width: 560px){
+    body{
+        padding: 3rem 1rem;
+    }
+    .body-content{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .professional{
+        height: auto;
+        margin: 0;
+    }
+    .professional, .bas-mas{
+        padding: 2rem;
+    }
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #ccc; */
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+    background-image: none;
+  background-color: hsl(236, 72%, 79%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
